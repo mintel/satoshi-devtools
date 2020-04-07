@@ -13,4 +13,4 @@ LABEL org.opencontainers.image.title="satoshi-devtools" \
       org.opencontainers.image.revision=$VCS_REF
 
 COPY --from=mintel/kubelock:0.1.0 /usr/local/bin/kubelock /usr/local/bin/
-COPY --from=banzaicloud/vault-env:0.7.1 /usr/local/bin/vault-env /usr/local/bin/
+COPY --from=banzaicloud/vault-env:1.0.1 /usr/local/bin/vault-env /usr/local/bin/
