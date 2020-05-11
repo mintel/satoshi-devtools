@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 1.1.0 (2020-05-11)
+### Changed
+- vault-env bumped to [v1.2.0](https://github.com/banzaicloud/bank-vaults/releases/tag/1.2.0)
+
 ## 1.0.0 (2020-04-07)
 ### Changed
 - vault-env bumped to v1.0.1
