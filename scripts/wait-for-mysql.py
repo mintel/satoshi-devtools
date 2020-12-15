@@ -29,7 +29,7 @@ def connect():
     if None in [args.db_host, args.db_name, args.db_user, args.db_password]:
         exit(parser.print_usage())
 
-    print("Pinging %s database host" % (args.db_host))
+    print("Pinging %s host" % (args.db_host))
     db = None
     while True:
         try:
@@ -41,7 +41,7 @@ def connect():
             )
             break
         except MySQLdb.DatabaseError:
-            print("No reply in 2 secs. Pinging %s database host again" % (args.db_host))
+            print("No reply in 2 secs. Pinging %s host again" % (args.db_host))
             time.sleep(2)
             continue
     db.ping()
