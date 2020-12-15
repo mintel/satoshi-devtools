@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 1.3.0 (2020-12-15)
+### Added
+- Added `--db-port` option to `wait-for-mysql.py` helper script
+
 ## 1.2.0 (2020-12-15)
 ### Added
 - Added `wait-for-mysql.py` helper script

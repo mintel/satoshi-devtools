@@ -12,6 +12,7 @@ def connect():
         description="wait-for-mysql waits for a valid db-connection"
     )
     parser.add_argument("--db-host", default=os.environ.get("DB_HOST"))
+    parser.add_argument("--db-port", default=os.environ.get("DB_PORT", 3306))
     parser.add_argument("--db-name", default=os.environ.get("DB_NAME"))
     parser.add_argument("--db-user", default=os.environ.get("DB_USER"))
     parser.add_argument("--db-password", default=os.environ.get("DB_PASSWORD"))
@@ -35,6 +36,7 @@ def connect():
         try:
             db = MySQLdb.connect(
                 host=args.db_host,
+                port=args.db_port,
                 user=args.db_user,
                 passwd=args.db_password,
                 connect_timeout=args.db_connect_timeout,

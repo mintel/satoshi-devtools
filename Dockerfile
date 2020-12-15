@@ -5,7 +5,7 @@ ARG VCS_REF
 
 LABEL org.opencontainers.image.title="satoshi-devtools" \
       org.opencontainers.image.description="Image containing approved versions of tools used with apps running on Mintel's Satoshi platform." \
-      org.opencontainers.image.version="1.2.0" \
+      org.opencontainers.image.version="1.3.0" \
       org.opencontainers.image.vendor="Mintel Group Ltd." \
       org.opencontainers.image.authors="Bobby Brockway <bbrockway@mintel.com>" \
       org.opencontainers.image.source="https://github.com/mintel/satoshi-devtools" \
