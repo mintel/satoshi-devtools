@@ -36,7 +36,7 @@ def connect():
         try:
             db = MySQLdb.connect(
                 host=args.db_host,
-                port=args.db_port,
+                port=int(args.db_port),
                 user=args.db_user,
                 passwd=args.db_password,
                 connect_timeout=args.db_connect_timeout,
