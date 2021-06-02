@@ -12,6 +12,6 @@ LABEL org.opencontainers.image.title="satoshi-devtools" \
       org.opencontainers.image.created=$BUILD_DATE \
       org.opencontainers.image.revision=$VCS_REF
 
-COPY --from=mintel/kubelock:0.2.0 /usr/local/bin/kubelock /usr/local/bin/
-COPY --from=banzaicloud/vault-env:1.2.0 /usr/local/bin/vault-env /usr/local/bin/
+COPY --from=mintel/kubelock:0.3.0 /usr/local/bin/kubelock /usr/local/bin/
+COPY --from=banzaicloud/vault-env:1.13.0 /usr/local/bin/vault-env /usr/local/bin/
 COPY ./scripts/wait-for-mysql.py /usr/local/bin/
