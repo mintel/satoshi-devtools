@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 1.5.0 (2021-06-02)
+### Changed
+- kubelock v0.3.0
+- vault-env v1.13.0
+
 ## 1.4.0 (2021-05-27)
 ### Changed
 - kubelock v0.2.0
